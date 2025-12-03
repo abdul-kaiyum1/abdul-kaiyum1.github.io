@@ -1,46 +1,63 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Class 12 Weekly Study Routine</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#0f1223;--card:#141832;--ink:#e9ecf8;--muted:#a9b1d1;--accent:#6c9ef8;
-    --accent-2:#8a7fff;--accent-3:#f7b267;--accent-4:#67dfc4;--accent-5:#ff7aa2;--accent-6:#7ed957;--chip:#1b2244;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:linear-gradient(140deg,#0d1020 0%,#111534 60%,#0d1225 100%);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans";-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1040px;margin:48px auto 96px;padding:0 20px}
-  header{background:radial-gradient(1200px 500px at 10% -20%,rgba(108,158,248,.22),transparent 55%),radial-gradient(800px 500px at 100% 0%,rgba(138,127,255,.18),transparent 60%);border:1px solid rgba(255,255,255,0.05);border-radius:20px;padding:28px 28px 22px;box-shadow:0 20px 60px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03)}
-  .motivation{font-weight:600;letter-spacing:.2px;color:#67dfc4;background:rgba(103,223,196,.12);border:1px solid rgba(103,223,196,.25);padding:10px 14px;border-radius:12px;display:inline-block}
-  h1{font-family:Poppins,Inter,system-ui,Arial;font-weight:800;font-size:34px;margin:14px 0 6px;line-height:1.1;letter-spacing:.2px}
-  .meta{color:var(--muted);font-size:14px}
-  .legend{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px;color:var(--muted);font-size:12px}
-  .legend .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid rgba(255,255,255,.06)}
-  .section-title{margin:28px 0 10px;font-weight:800;font-family:Poppins,Inter,system-ui,Arial;letter-spacing:.3px}
-  .note{background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.18);padding:12px 14px;border-radius:12px;color:var(--muted);font-size:13px}
-  .grid{margin-top:24px;display:grid;gap:16px;grid-template-columns:repeat(1,minmax(0,1fr))}
-  @media (min-width:720px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
-  @media (min-width:1024px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
-  .day{border-radius:18px;overflow:hidden;background:#141832;border:1px solid rgba(255,255,255,0.06);box-shadow:0 12px 40px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.02)}
-  .day h2{margin:0;padding:14px 16px;font-size:18px;font-weight:800;font-family:Poppins,Inter,system-ui,Arial}
-  .sun{background:linear-gradient(180deg,rgba(108,158,248,.25),rgba(108,158,248,.06))}
-  .mon{background:linear-gradient(180deg,rgba(138,127,255,.25),rgba(138,127,255,.06))}
-  .tue{background:linear-gradient(180deg,rgba(247,178,103,.25),rgba(247,178,103,.07))}
-  .wed{background:linear-gradient(180deg,rgba(103,223,196,.25),rgba(103,223,196,.07))}
-  .thu{background:linear-gradient(180deg,rgba(255,122,162,.25),rgba(255,122,162,.08))}
-  .fri{background:linear-gradient(180deg,rgba(126,217,87,.26),rgba(126,217,87,.08))}
-  .sat{background:linear-gradient(180deg,rgba(247,178,103,.26),rgba(247,178,103,.08))}
-  .list{padding:8px 14px 16px}
-  .item{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px;border-radius:12px;margin:8px 0;background:#1b2244;border:1px solid rgba(255,255,255,.05)}
-  .time{color:#c8d0f2;font-weight:600;font-size:13px}
-  .what{font-weight:600;letter-spacing:.2px}
-  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#a9b1d1}
-  footer{margin-top:28px;color:#a9b1d1;font-size:12px}
-  @media print{body{background:white}header,.day{box-shadow:none}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Class 12 Weekly Study Routine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1223;--card:#141832;--ink:#e9ecf8;--muted:#a9b1d1;--accent:#6c9ef8;
+      --accent-2:#8a7fff;--accent-3:#f7b267;--accent-4:#67dfc4;--accent-5:#ff7aa2;--accent-6:#7ed957;--chip:#1b2244;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(140deg,#0d1020 0%,#111534 60%,#0d1225 100%);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans";-webkit-font-smoothing:antialiased}
+    .wrap{max-width:1040px;margin:48px auto 96px;padding:0 20px}
+    
+    /* --- Centering applied here --- */
+    header{
+      text-align: center; /* Centers the motivation chip, h1, and meta */
+      max-width: 900px; /* Optional: restricts header width for better centering view */
+      margin-left: auto;
+      margin-right: auto;
+      background:radial-gradient(1200px 500px at 10% -20%,rgba(108,158,248,.22),transparent 55%),radial-gradient(800px 500px at 100% 0%,rgba(138,127,255,.18),transparent 60%);border:1px solid rgba(255,255,255,0.05);border-radius:20px;padding:28px 28px 22px;box-shadow:0 20px 60px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03)
+    }
+    
+    .motivation{font-weight:600;letter-spacing:.2px;color:#67dfc4;background:rgba(103,223,196,.12);border:1px solid rgba(103,223,196,.25);padding:10px 14px;border-radius:12px;display:inline-block}
+    h1{font-family:Poppins,Inter,system-ui,Arial;font-weight:800;font-size:34px;margin:14px 0 6px;line-height:1.1;letter-spacing:.2px}
+    .meta{color:var(--muted);font-size:14px}
+    .legend{
+      margin-top:24px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      color:var(--muted);
+      font-size:12px;
+      justify-content: center; /* Centers the chips group */
+    }
+    .legend .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid rgba(255,255,255,.06)}
+    
+    .section-title{margin:28px 0 10px;font-weight:800;font-family:Poppins,Inter,system-ui,Arial;letter-spacing:.3px}
+    .note{background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.18);padding:12px 14px;border-radius:12px;color:var(--muted);font-size:13px}
+    .grid{margin-top:24px;display:grid;gap:16px;grid-template-columns:repeat(1,minmax(0,1fr))}
+    @media (min-width:720px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+    @media (min-width:1024px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+    .day{border-radius:18px;overflow:hidden;background:#141832;border:1px solid rgba(255,255,255,0.06);box-shadow:0 12px 40px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,255,255,.02)}
+    .day h2{margin:0;padding:14px 16px;font-size:18px;font-weight:800;font-family:Poppins,Inter,system-ui,Arial}
+    .sun{background:linear-gradient(180deg,rgba(108,158,248,.25),rgba(108,158,248,.06))}
+    .mon{background:linear-gradient(180deg,rgba(138,127,255,.25),rgba(138,127,255,.06))}
+    .tue{background:linear-gradient(180deg,rgba(247,178,103,.25),rgba(247,178,103,.07))}
+    .wed{background:linear-gradient(180deg,rgba(103,223,196,.25),rgba(103,223,196,.07))}
+    .thu{background:linear-gradient(180deg,rgba(255,122,162,.25),rgba(255,122,162,.08))}
+    .fri{background:linear-gradient(180deg,rgba(126,217,87,.26),rgba(126,217,87,.08))}
+    .sat{background:linear-gradient(180deg,rgba(247,178,103,.26),rgba(247,178,103,.08))}
+    .list{padding:8px 14px 16px}
+    .item{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px;border-radius:12px;margin:8px 0;background:#1b2244;border:1px solid rgba(255,255,255,.05)}
+    .time{color:#c8d0f2;font-weight:600;font-size:13px}
+    .what{font-weight:600;letter-spacing:.2px}
+    .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#a9b1d1}
+    footer{margin-top:28px;color:#a9b1d1;font-size:12px}
+    @media print{body{background:white}header,.day{box-shadow:none}}
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -61,7 +78,6 @@
     </div>
 
     <div class="grid">
-      <!-- Sunday -->
       <section class="day">
         <h2 class="sun">Sunday</h2>
         <div class="list">
@@ -75,7 +91,6 @@
         </div>
       </section>
 
-      <!-- Monday -->
       <section class="day">
         <h2 class="mon">Monday</h2>
         <div class="list">
@@ -89,7 +104,6 @@
         </div>
       </section>
 
-      <!-- Tuesday -->
       <section class="day">
         <h2 class="tue">Tuesday</h2>
         <div class="list">
@@ -103,7 +117,6 @@
         </div>
       </section>
 
-      <!-- Wednesday -->
       <section class="day">
         <h2 class="wed">Wednesday</h2>
         <div class="list">
@@ -117,7 +130,6 @@
         </div>
       </section>
 
-      <!-- Thursday -->
       <section class="day">
         <h2 class="thu">Thursday</h2>
         <div class="list">
@@ -131,7 +143,6 @@
         </div>
       </section>
 
-      <!-- Friday -->
       <section class="day">
         <h2 class="fri">Friday (Holiday)</h2>
         <div class="list">
@@ -146,7 +157,6 @@
         </div>
       </section>
 
-      <!-- Saturday -->
       <section class="day">
         <h2 class="sat">Saturday (Holiday)</h2>
         <div class="list">
